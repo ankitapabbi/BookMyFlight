@@ -19,6 +19,24 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Notification--- of BookMyFlight WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7EB6A9A224F5D5FE00AD2838</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EB6A9B424F5D60100AD2838</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

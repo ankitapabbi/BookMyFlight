@@ -13,10 +13,12 @@ import UserNotifications
 
 class NotificationController: WKUserNotificationInterfaceController {
 
+   
+    @IBOutlet weak var airlineName: WKInterfaceLabel!
     override init() {
         // Initialize variables here.
         super.init()
-        
+       //self.airlineName.setText("airline name")
         // Configure interface objects here.
     }
 
@@ -29,10 +31,15 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
-    override func didReceive(_ notification: UNNotification) {
-        // This method is called when a notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
+    // 1
+    override func didReceive(_ notification: UNNotification,
+                             withCompletion completionHandler:
+        @escaping (WKUserNotificationInterfaceType) -> Void) {
+        // 2
+    
+     //   self.airlineName.setText("airline name")
+      
+        // 4
+        completionHandler(.custom)
     }
 }

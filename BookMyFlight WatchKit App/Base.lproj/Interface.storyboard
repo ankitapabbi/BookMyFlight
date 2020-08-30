@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BookMyFlight_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Book My Flight" id="aG3-mA-mv6"/>
+                        <table alignment="left" id="HpN-H1-Jxs">
+                            <items>
+                                <tableRow identifier="CartRowController" id="j9v-Gr-0zw" customClass="CartRowController" customModule="BookMyFlight_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="136" alignment="left" layout="vertical" id="v2S-7P-5U7">
+                                        <items>
+                                            <label width="125" alignment="left" text="Airline Name" id="pK5-Es-exe"/>
+                                            <label width="123" alignment="left" text="Origin" id="MWc-ye-mRV"/>
+                                            <label alignment="left" text="TO" id="rk0-3X-jgS">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            </label>
+                                            <label width="123" alignment="left" text="Destination" id="jYq-gM-wC9"/>
+                                            <label alignment="left" text="Price" id="abx-tC-dYD"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="airlineName" destination="pK5-Es-exe" id="5RT-Tb-yD1"/>
+                                        <outlet property="desitnationName" destination="jYq-gM-wC9" id="KwM-9R-rR2"/>
+                                        <outlet property="originName" destination="MWc-ye-mRV" id="9F0-66-WId"/>
+                                        <outlet property="price" destination="abx-tC-dYD" id="kDN-6s-dzM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="cartWatchTbl" destination="HpN-H1-Jxs" id="Y8R-mp-8q2"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="349.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,14 +66,22 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="BookMyFlight_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="BookMyFlight_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Your flight is ahead." id="zrM-VG-Lnf"/>
+                        <label alignment="left" text="Don't be late..!" id="Lgw-g2-7Jd"/>
+                    </items>
+                    <connections>
+                        <outlet property="airlineName" destination="Lgw-g2-7Jd" id="wVg-zS-xlF"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>

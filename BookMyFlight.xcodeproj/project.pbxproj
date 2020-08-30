@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2615E1711971F95527426DBC /* Pods_BookMyFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16DE6CBD5A6609068CA45C2 /* Pods_BookMyFlight.framework */; };
+		7E2449C224FA00FE008F7265 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2449C124FA00FE008F7265 /* DetailsViewController.swift */; };
+		7E2449C424FA3663008F7265 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2449C324FA3663008F7265 /* Flight.swift */; };
+		7E2449C624FA3B2E008F7265 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2449C524FA3B2D008F7265 /* Cart.swift */; };
+		7E2449C824FA3DA4008F7265 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2449C724FA3DA4008F7265 /* CartViewController.swift */; };
+		7E2449CA24FA3F2A008F7265 /* CartLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2449C924FA3F2A008F7265 /* CartLayoutTableViewCell.swift */; };
+		7E2449CC24FA4E1A008F7265 /* CartRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2449CB24FA4E1A008F7265 /* CartRowController.swift */; };
+		7E2449CE24FB7940008F7265 /* WatchNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 7E2449CD24FB7940008F7265 /* WatchNotificationPayload.apns */; };
 		7EB6A9A724F5D5FE00AD2838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6A9A624F5D5FE00AD2838 /* AppDelegate.swift */; };
 		7EB6A9A924F5D5FE00AD2838 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6A9A824F5D5FE00AD2838 /* ViewController.swift */; };
 		7EB6A9AC24F5D5FE00AD2838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB6A9AA24F5D5FE00AD2838 /* Main.storyboard */; };
@@ -67,6 +74,13 @@
 
 /* Begin PBXFileReference section */
 		3A70DBA0012A68F6BE1535AE /* Pods-BookMyFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMyFlight.release.xcconfig"; path = "Target Support Files/Pods-BookMyFlight/Pods-BookMyFlight.release.xcconfig"; sourceTree = "<group>"; };
+		7E2449C124FA00FE008F7265 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7E2449C324FA3663008F7265 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		7E2449C524FA3B2D008F7265 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		7E2449C724FA3DA4008F7265 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		7E2449C924FA3F2A008F7265 /* CartLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		7E2449CB24FA4E1A008F7265 /* CartRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRowController.swift; sourceTree = "<group>"; };
+		7E2449CD24FB7940008F7265 /* WatchNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = WatchNotificationPayload.apns; sourceTree = "<group>"; };
 		7EB6A9A324F5D5FE00AD2838 /* BookMyFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMyFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB6A9A624F5D5FE00AD2838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB6A9A824F5D5FE00AD2838 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +143,6 @@
 				D34FD346460EED789219CD12 /* Pods-BookMyFlight.debug.xcconfig */,
 				3A70DBA0012A68F6BE1535AE /* Pods-BookMyFlight.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,6 +177,11 @@
 				7EB6A9AD24F5D60000AD2838 /* Assets.xcassets */,
 				7EB6A9AF24F5D60000AD2838 /* LaunchScreen.storyboard */,
 				7EB6A9B224F5D60000AD2838 /* Info.plist */,
+				7E2449C124FA00FE008F7265 /* DetailsViewController.swift */,
+				7E2449C324FA3663008F7265 /* Flight.swift */,
+				7E2449C524FA3B2D008F7265 /* Cart.swift */,
+				7E2449C724FA3DA4008F7265 /* CartViewController.swift */,
+				7E2449C924FA3F2A008F7265 /* CartLayoutTableViewCell.swift */,
 			);
 			path = BookMyFlight;
 			sourceTree = "<group>";
@@ -187,6 +205,8 @@
 				7EB6A9CF24F5D60200AD2838 /* Assets.xcassets */,
 				7EB6A9D124F5D60200AD2838 /* Info.plist */,
 				7EB6A9D224F5D60200AD2838 /* PushNotificationPayload.apns */,
+				7E2449CB24FA4E1A008F7265 /* CartRowController.swift */,
+				7E2449CD24FB7940008F7265 /* WatchNotificationPayload.apns */,
 			);
 			path = "BookMyFlight WatchKit Extension";
 			sourceTree = "<group>";
@@ -316,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB6A9D024F5D60200AD2838 /* Assets.xcassets in Resources */,
+				7E2449CE24FB7940008F7265 /* WatchNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +390,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB6A9A924F5D5FE00AD2838 /* ViewController.swift in Sources */,
+				7E2449C424FA3663008F7265 /* Flight.swift in Sources */,
+				7E2449CA24FA3F2A008F7265 /* CartLayoutTableViewCell.swift in Sources */,
+				7E2449C624FA3B2E008F7265 /* Cart.swift in Sources */,
 				7EB6A9A724F5D5FE00AD2838 /* AppDelegate.swift in Sources */,
+				7E2449C824FA3DA4008F7265 /* CartViewController.swift in Sources */,
+				7E2449C224FA00FE008F7265 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2449CC24FA4E1A008F7265 /* CartRowController.swift in Sources */,
 				7EB6A9CE24F5D60100AD2838 /* NotificationController.swift in Sources */,
 				7EB6A9CC24F5D60100AD2838 /* ExtensionDelegate.swift in Sources */,
 				7EB6A9CA24F5D60100AD2838 /* InterfaceController.swift in Sources */,
